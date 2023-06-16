@@ -23,6 +23,8 @@ public class Health : MonoBehaviour
     public void TakeDamage(float _damage)
     {
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
+        // log current health
+        Debug.Log(currentHealth);
 
         if (currentHealth > 0)
         {
