@@ -30,7 +30,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5621414005835945689
 MonoBehaviour:
@@ -45,5 +45,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   echo: {fileID: 6563269534724631292, guid: d7545e0f4a3b38747adc42cdab884ee3, type: 3}
-  spawnRate: 0.08
+  spawnRate: 0.06
   amountToSpawn: 10

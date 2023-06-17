@@ -188,8 +188,8 @@ MonoBehaviour:
   circleRenderer: {fileID: 4220565775066149154}
   circleCollider: {fileID: 5495248934543750534}
   direction: {x: 1, y: 1}
-  moveSpeed: 2
+  moveSpeed: 4
   scaleSpeed: 1
-  fadeSpeed: 0.2
+  fadeSpeed: 1.7
   alpha: 1
   radius: 0

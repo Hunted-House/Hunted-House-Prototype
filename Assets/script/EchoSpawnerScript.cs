@@ -9,6 +9,7 @@ public class EchoSpawnerScript : MonoBehaviour
   public int amountToSpawn = 0;
   private int amountSpawned = 0;
   private float spawnTimer = 0;
+
   void Start()
   {
 
@@ -19,7 +20,7 @@ public class EchoSpawnerScript : MonoBehaviour
   {
     if (amountToSpawn != 0 && amountSpawned > amountToSpawn)
     {
-        Destroy(gameObject);
+      Destroy(gameObject);
     }
     if (spawnTimer < spawnRate)
     {
@@ -27,7 +28,10 @@ public class EchoSpawnerScript : MonoBehaviour
     }
     else
     {
-      Instantiate(echo, transform.position, transform.rotation);
+      GameObject echoInstance = Instantiate(echo, transform.position, transform.rotation);
+      EchoScript echoScript = echoInstance.GetComponent<EchoScript>();
+      echoScript.direction = (new Vector2(transform.position.x, transform.position.y)).normalized;
+
       amountSpawned += 1;
       spawnTimer = 0;
     }
