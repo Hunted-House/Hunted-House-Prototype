@@ -12,7 +12,7 @@ public class EchoScript : MonoBehaviour
   public float fadeSpeed = 0;
   public float alpha = 1;
 
-  public float radius = 1;
+  public float radius = 0;
   void Start()
   {
     DrawCircle(100, radius);
