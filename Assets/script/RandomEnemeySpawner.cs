@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RandomEnemySpawner : MonoBehaviour
 {
@@ -48,6 +49,7 @@ public class RandomEnemySpawner : MonoBehaviour
         if (transform.childCount == 0)
         {
             Debug.Log("All enemies are dead");
+            SceneManager.LoadScene("OutroScene", LoadSceneMode.Single);
         }
     }
 }
